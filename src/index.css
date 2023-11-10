@@ -71,3 +71,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+.container {
+  @apply max-w-[1200px] w-full;
+}
