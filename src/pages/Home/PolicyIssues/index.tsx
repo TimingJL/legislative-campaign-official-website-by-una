@@ -20,7 +20,7 @@ const PolicyIssues = () => {
             "lg:flex-row lg:gap-[0px] lg:justify-between lg:items-start"
           )}
         >
-          {issues.map((issue, index) => <Card key={issue.tag} {...issue} className={clsx(index === 1 && "lg:mt-[30px]")} />)}
+          {issues.map((issue, index) => <Card key={issue.tag} {...issue} className={clsx(index === 1 && "lg:mt-[30px] mx-[20px]")} />)}
         </div>
       </div>
     </section>

@@ -7,10 +7,13 @@ import DollarSrc from 'src/assets/icons/dollar-circle.svg';
 
 const Navigation = () => {
   return (
-    <nav className={clsx(
-      "flex items-center justify-center h-[65px] bg-white shadow-sm px-[20px]",
-      "lg:h-[100px]"
-    )}>
+    <nav
+      className={clsx(
+        "flex items-center justify-center h-[65px] bg-white shadow-sm px-[20px] sticky top-0 z-50",
+        "lg:h-[100px]"
+      )}
+      style={{ borderTop: "4px solid #4527A0" }}
+    >
       <div className="container flex items-center justify-between">
         <a href={`#${anchorId.hero}`}>
           <img
