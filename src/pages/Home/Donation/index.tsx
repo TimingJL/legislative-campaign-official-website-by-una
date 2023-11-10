@@ -4,10 +4,10 @@ const Donation = () => {
   return (
     <section
       id={anchorId.donation}
-      className="flex justify-center px-[20px] pt-[30px]"
+      className="flex justify-center px-[20px] py-[30px]"
     >
       <div className="container">
-        Donation
+        donation
       </div>
     </section>
   );
