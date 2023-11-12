@@ -34,12 +34,13 @@ const Card = (props: IProps) => {
           "relative overflow-hidden flex-shrink-0",
           isHorizontal && "w-[276px]",
           isVertical && verticalImgClass || "max-h-[325px]",
+          "overflow-hidden h-auto [&>img]:hover:scale-105"
         )}
       >
         <img
           src={imgSrc}
           className={clsx(
-            "object-cover w-full",
+            "object-cover w-full transition-all",
           )}
         />
         {isVertical &&  (
