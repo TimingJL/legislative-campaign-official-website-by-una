@@ -8,7 +8,7 @@ interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = (props: IProps) => {
-  const { children, startIcon, endIcon, ...otherProps } = props;
+  const { children, startIcon, endIcon, className, ...otherProps } = props;
   return (
     <button
       className={clsx(
@@ -16,7 +16,8 @@ const Button = (props: IProps) => {
         "bg-primary text-white font-bold text-[20px] h-[52px] rounded-[50px] px-[20px]",
         "hover:opacity-80",
         "active:scale-90",
-        "transition-all"
+        "transition-all",
+        className
       )}
       {...otherProps}
     >

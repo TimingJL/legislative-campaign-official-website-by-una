@@ -1,12 +1,16 @@
 import { anchorId } from 'src/config/anchor';
 import logoWhiteSrc from 'src/assets/images/logo-white.svg';
+import bottomCatSrc from 'src/assets/images/bottom-cat.png';
 
 const Footer = () => {
   return (
     <section
-      className="flex justify-center bg-primary text-white px-[20px] pt-[30px] pb-[15px]"
+      className="flex justify-center bg-primary text-white px-[20px] pt-[30px] pb-[15px] overflow-visible"
     >
       <div className="container">
+        <div className="relative h-[2px]">
+          <img src={bottomCatSrc} className="absolute top-0 lg:left-[84px] left-[50%] translate-x-[-50%] lg:translate-x-[0%] translate-y-[calc(-100%+30px)]" />
+        </div>
         <div className="flex justify-between">
           <div className="logo hidden lg:block">
             <img src={logoWhiteSrc} />
