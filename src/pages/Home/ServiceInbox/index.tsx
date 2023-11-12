@@ -15,7 +15,7 @@ const ServiceInbox = () => {
           <div className="flex flex-col align-center lg:w-[679px]">
             <img src={titleServiceInboxSrc} className="h-[35px] lg:h-[60px] mb-[20px]" />
             <div className="flex justify-center">
-              <div className="lg:w-[479px] min-w-[353px]">
+              <div className="lg:max-w-[479px] max-w-[353px]">
                 <div className="text-center lg:text-[24px] font-bold text-[20px]">您的聲音，我們的行動！</div>
                 <div className="lg:font-bold text-center lg:text-[24px] text-[15px] font-medium mt-[10px]">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！</div>
               </div>
@@ -26,7 +26,7 @@ const ServiceInbox = () => {
               <Input className="w-full" type="text" placeholder="您的姓名" />
               <Input className="w-full" type="text" placeholder="您的 Email" />
               <Input className="w-full" type="text" placeholder="您的手機" />
-              <Textarea className="w-full h-[100px]" placeholder="您的建言" />
+              <Textarea className="w-full min-h-[100px]" placeholder="您的建言" />
               <Button className="mb-[100px] w-[100%] max-w-[140px] lg:w-[172px]">送出意見</Button>
             </div>
           </div>
