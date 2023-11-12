@@ -36,10 +36,9 @@ const Hero = () => {
           <div className="relative mt-[210px] lg:mt-[0px]">
             <div
               className={clsx(
-                "bg-white z-10 w-full rounded-tl-[80px] rounded-br-[80px] pt-[10px] pb-[18px] px-[15px] border-primary border-[3px] mb-[10px]",
-                "lg:w-full lg:right-[20px] lg:pt-[30px] lg:pb-[40px] lg:px-[40px]",
+                "bg-white z-10 w-full rounded-tl-[80px] rounded-br-[80px] pt-[10px] pb-[18px] px-[15px] border-primary border-[3px] mb-[20px] shadow-[-5px_5px_0_0_rgba(69,39,160,1)]",
+                "lg:w-full lg:right-[20px] lg:pt-[30px] lg:pb-[40px] lg:px-[40px] lg:border-[5px] lg:shadow-[-15px_20px_0_0_rgba(69,39,160,1)]",
               )}
-              style={{ boxShadow: '#4527A0 -5px 5px 0px 0px' }}
             >
               <img
                 className={clsx(
