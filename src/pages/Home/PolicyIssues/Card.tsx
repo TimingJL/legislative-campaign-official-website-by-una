@@ -15,7 +15,7 @@ const Card = (props: IProps) => {
   const { tag, title, items, className, ...otherProps } = props;
   return (
     <div className={clsx(
-        "bg-white w-full rounded-[8px] p-[15px] max-w-[380px] lg:h-[400px]",
+        "bg-white w-full rounded-[8px] p-[15px] lg:max-w-[380px] lg:h-[400px]",
         className,
       )}
       {...otherProps}

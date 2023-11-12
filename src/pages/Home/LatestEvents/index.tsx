@@ -8,7 +8,7 @@ const LatestEvents = () => {
   return (
     <section
       id={anchorId.latestEvents}
-      className="flex justify-center bg-[#E3E3E3] px-[20px] py-[30px]"
+      className="flex justify-center bg-[#E3E3E3] py-[30px]"
     >
       <div className="container">
         <div className="flex align-center justify-center mb-[30px]">

@@ -11,6 +11,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --swiper-pagination-color: #4527a0;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-vertical-gap: 8px;
 }
 
 * {
@@ -35,4 +43,26 @@ h1 {
 
 .container {
   @apply max-w-[1200px] w-full;
+}
+
+.three-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow-y: hidden;
+}
+
+.swiper {
+  padding-bottom: 60px !important;
+}
+
+.swiper-slide {
+  opacity: 0.7;
+  transform: scale(0.95) !important;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1) !important;
 }

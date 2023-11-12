@@ -5,7 +5,7 @@ const NormalLayout = () => {
   const headlineEvent = events[0];
   const otherEvents = events.filter((event) => event.id !== headlineEvent.id);
   return (
-    <div className="flex gap-[30px]">
+    <div className="lg:flex gap-[30px] hidden">
       <div>
         <Card variant="vertical" data={headlineEvent} />
       </div>
