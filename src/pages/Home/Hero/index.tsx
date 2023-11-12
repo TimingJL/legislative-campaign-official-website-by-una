@@ -29,7 +29,7 @@ const Hero = () => {
           <img src={miaoLiHanEnOutlinedSrc} className="absolute bottom-[-20px] left-[60px] h-[150px] translate-y-[100%] md:block hidden" />
           <img src={miaoLiHanEnWrapOutlinedSrc} className="absolute bottom-0 left-[40px] h-[150px] translate-y-[100%] md:hidden block" />
         </div>
-        <div className="flex w-full gap-[10px] lg:items-end">
+        <div className="flex w-full lg:gap-[64px] gap-[15px] lg:items-end">
           <div className="mt-[18px] max-w-[30px] lg:max-w-[56px] relative flex-shrink-0">
             <img src={keepItPossibleSrc} />
           </div>
@@ -37,7 +37,7 @@ const Hero = () => {
             <div
               className={clsx(
                 "bg-white z-10 w-full rounded-tl-[80px] rounded-br-[80px] pt-[10px] pb-[18px] px-[15px] border-primary border-[3px] mb-[20px] shadow-[-5px_5px_0_0_rgba(69,39,160,1)]",
-                "lg:w-full lg:right-[20px] lg:pt-[30px] lg:pb-[40px] lg:px-[40px] lg:border-[5px] lg:shadow-[-15px_20px_0_0_rgba(69,39,160,1)]",
+                "lg:w-full lg:right-[20px] lg:pt-[30px] lg:pb-[40px] lg:px-[50px] lg:border-[5px] lg:shadow-[-15px_20px_0_0_rgba(69,39,160,1)]",
               )}
             >
               <img
@@ -57,7 +57,7 @@ const Hero = () => {
               </div>
               <div
                 className={clsx(
-                  "text-[10px] lg:text-[15px] whitespace-pre-line",
+                  "text-[10px] lg:text-[24px] font-bold whitespace-pre-line",
                   "lg:text-[25px]"
                 )}
               >
