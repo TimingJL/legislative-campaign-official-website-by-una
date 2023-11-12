@@ -5,10 +5,11 @@ interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode | string;
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
+  iconClassName?: string;
 }
 
 const Button = (props: IProps) => {
-  const { children, startIcon, endIcon, className, ...otherProps } = props;
+  const { children, startIcon, endIcon, className, iconClassName, ...otherProps } = props;
   return (
     <button
       className={clsx(
@@ -22,14 +23,16 @@ const Button = (props: IProps) => {
       {...otherProps}
     >
       <div className={clsx(
-        "w-[30px] h-[30px] flex-shrink-0",
+        `w-[30px] h-[30px] flex-shrink-0`,
+        iconClassName,
         !startIcon && "hidden"
       )}>
         {startIcon}
       </div>
       {children}
       <div className={clsx(
-        "w-[30px] h-[30px] flex-shrink-0",
+        `w-[30px] h-[30px] flex-shrink-0`,
+        iconClassName,
         !endIcon && "hidden"
       )}>
         {endIcon}

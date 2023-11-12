@@ -9,7 +9,7 @@ const LatestEvents = () => {
     >
       <div className="container">
         <div className="flex align-center justify-center">
-          <img src={titleLatestEventsSrc} />
+          <img src={titleLatestEventsSrc} className="h-[35px] lg:h-[60px]" />
         </div>
       </div>
     </section>

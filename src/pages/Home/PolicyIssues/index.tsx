@@ -12,11 +12,11 @@ const PolicyIssues = () => {
     >
       <div className="container">
         <div className="flex align-center justify-center">
-          <img src={titlePolicyIssuesSrc} />
+          <img src={titlePolicyIssuesSrc} className="h-[35px] lg:h-[60px]" />
         </div>
         <div
           className={clsx(
-            "flex flex-col gap-[20px] mt-[30px] justify-center items-center",
+            "flex flex-col gap-[20px] mt-[15px] lg:mt-[30px] justify-center items-center",
             "lg:flex-row lg:gap-[0px] lg:justify-between lg:items-start"
           )}
         >
