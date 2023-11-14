@@ -18,7 +18,7 @@ const Hero = () => {
       id={anchorId.hero}
       className="flex justify-center bg-[#E3E3E3] lg:px-[20px] px-[10px] lg:pt-[146px] pt-[30px]"
     >
-      <div className="container relative">
+      <div className="container relative" id={anchorId.advocate}>
         <img src={miaoLiHanCn} className="absolute right-0 top-[-120px] hidden lg:block" />
         <div className="relative">
           <div className="w-full flex justify-center sm:justify-start">
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
           <img src={sloganSrc} className="py-[10px] w-[345px] lg:w-[700px] hidden lg:block" />
           <img src={sloganMobileSrc} className="py-[10px] min-w-[345px] max-w-[700px] w-full lg:hidden" />
-          <img src={miaoLiHanEnOutlinedSrc} className="absolute bottom-[-20px] left-[60px] h-[150px] translate-y-[100%] md:block hidden" />
+          <img src={miaoLiHanEnOutlinedSrc} className="absolute bottom-[-20px] left-[60px] h-[130px] translate-y-[100%] md:block hidden" />
           <img src={miaoLiHanEnWrapOutlinedSrc} className="absolute bottom-0 left-[40px] h-[150px] translate-y-[100%] md:hidden block" />
         </div>
         <div className="flex w-full lg:gap-[64px] gap-[15px] lg:items-end">

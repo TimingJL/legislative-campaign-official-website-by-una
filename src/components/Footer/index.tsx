@@ -1,6 +1,7 @@
 import { anchorId } from 'src/config/anchor';
 import logoWhiteSrc from 'src/assets/images/logo-white.svg';
 import bottomCatSrc from 'src/assets/images/bottom-cat.png';
+import { scrollIntoViewWithOffset } from 'src/utils';
 
 const Footer = () => {
   return (
@@ -20,14 +21,14 @@ const Footer = () => {
               <div className="label text-[#FFB300] text-[13px] text-center mb-[10px]">Menu</div>
               <div className="flex text-[15px] font-medium">
                 <ul className="flex flex-col items-center">
-                  <li><a href={`#${anchorId.hero}`}>首頁</a></li>
-                  <li><a href={`#${anchorId.latestEvents}`}>最新活動</a></li>
-                  <li><a href={`#${anchorId.serviceInbox}`}>民眾服務信箱</a></li>
+                  <li className="cursor-pointer" onClick={() => scrollIntoViewWithOffset(document.getElementById(anchorId.advocate), 300)}>首頁</li>
+                  <li className="cursor-pointer" onClick={() => scrollIntoViewWithOffset(document.getElementById(anchorId.latestEvents), 80)}>最新活動</li>
+                  <li className="cursor-pointer" onClick={() => scrollIntoViewWithOffset(document.getElementById(anchorId.serviceInbox), 80)}>民眾服務信箱</li>
                 </ul>
                 <ul className="flex flex-col items-center ml-[50px]">
-                  <li><a href={`#${anchorId.advocate}`}>候選人主張</a></li>
-                  <li><a href={`#${anchorId.policyIssues}`}>政策議題</a></li>
-                  <li><a href={`#${anchorId.donation}`}>小額捐款</a></li>
+                  <li className="cursor-pointer" onClick={() => scrollIntoViewWithOffset(document.getElementById(anchorId.hero), 80)}>候選人主張</li>
+                  <li className="cursor-pointer" onClick={() => scrollIntoViewWithOffset(document.getElementById(anchorId.policyIssues), 80)}>政策議題</li>
+                  <li className="cursor-pointer" onClick={() => scrollIntoViewWithOffset(document.getElementById(anchorId.donation), 80)}>小額捐款</li>
                 </ul>
               </div>
             </div>
