@@ -9,6 +9,8 @@ const LatestEvents = () => {
     <section
       id={anchorId.latestEvents}
       className="flex justify-center bg-[#E3E3E3] py-[30px]"
+      data-aos="fade-up"
+      data-aos-delay="300"
     >
       <div className="container">
         <div className="flex align-center justify-center mb-[30px]">

@@ -13,6 +13,9 @@ const ServiceInbox = () => {
       <section
         id={anchorId.serviceInbox}
         className="flex justify-center bg-[#E3E3E3] px-[20px] py-[30px] lg:min-h-[522px]"
+        data-aos="fade-up"
+        data-aos-delay="300"
+
       >
         <div className="container">
           <div className="flex justify-center lg:flex-row flex-col">

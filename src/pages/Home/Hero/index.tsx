@@ -15,6 +15,8 @@ const description = '我堅信，藉由推動更完善的貓咪福利和相關�
 const Hero = () => {
   return (
     <section
+      data-aos="fade-up"
+      data-aos-delay="300"
       id={anchorId.hero}
       className="flex justify-center bg-[#E3E3E3] lg:px-[20px] px-[10px] lg:pt-[146px] pt-[30px]"
     >

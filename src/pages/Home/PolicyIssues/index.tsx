@@ -9,6 +9,8 @@ const PolicyIssues = () => {
     <section
       id={anchorId.policyIssues}
       className="flex justify-center bg-primary text-white px-[20px] py-[30px] pb-[50px]"
+      data-aos="fade-up"
+      data-aos-delay="300"
     >
       <div className="container">
         <div className="flex align-center justify-center">

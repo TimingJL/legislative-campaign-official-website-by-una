@@ -25,6 +25,8 @@ const Donation = () => {
         backgroundSize: 'cover',
         width: '100%',
       }}
+      data-aos="fade-up"
+      data-aos-delay="300"
     >
       <div className="container">
         <div className={clsx(
