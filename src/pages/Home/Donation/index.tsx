@@ -27,12 +27,18 @@ const Donation = () => {
       }}
       data-aos="fade-up"
       data-aos-delay="300"
+      data-aos-offset="500"
     >
       <div className="container">
-        <div className={clsx(
-          "bg-white max-w-[660px] w-full p-[30px] lg:py-[60px] lg:px-[30px] rounded-[80px] h-full flex flex-col items-center",
-          "py-[20px] px-[25px]"
-        )}>
+        <div
+          className={clsx(
+            "bg-white max-w-[660px] w-full p-[30px] lg:py-[60px] lg:px-[30px] rounded-[80px] h-full flex flex-col items-center",
+            "py-[20px] px-[25px]"
+          )}
+          data-aos="fade-right"
+          data-aos-delay="500"
+          data-aos-offset="500"
+        >
           {tab === 0 && (<>
             <img src={titleDonationSrc} className="lg:h-[60px] h-[35px]" />
             <div className="lg:whitespace-nowrap whitespace-pre-wrap text-center pt-[20px] lg:mt-[10px] mb-[20px] font-bold lg:text-[24px]">
@@ -57,9 +63,11 @@ const Donation = () => {
             </Button>
           </>)}
           {tab === 1 && (<>
-            <div>
-              <div className="text-center lg:text-[24px] text-[20px] font-bold mb-[10px]">選擇捐款方案</div>
-              <div className="grid grid-cols-6 gap-[10px] w-full">
+            <div
+              data-aos="fade-up"
+            >
+              <div className="text-center lg:text-[24px] text-[20px] font-bold mb-[10px]" data-aos="fade-up" data-aos-delay="200">選擇捐款方案</div>
+              <div className="grid grid-cols-6 gap-[10px] w-full" data-aos="fade-up" data-aos-delay="400">
                 {donationPlans.map((plan) => (
                   <OptionBox
                     key={plan.id}
@@ -71,7 +79,7 @@ const Donation = () => {
                 ))}
                 <CustomPrice id={999} className="grid-rows-1 col-span-3 md:col-span-6 lg:h-[90px]" selected={selectedPlan === 999} onClick={(value) => setSelectedPlan(value)} />
               </div>
-              <div className="flex justify-center lg:gap-[20px] gap-[10px] mt-[10px]">
+              <div className="flex justify-center lg:gap-[20px] gap-[10px] mt-[10px]" data-aos="fade-up" data-aos-delay="600">
                 <Button
                   className="lg:h-[82px] lg:w-[176px] lg:text-[28px]"
                   variant="outlined"

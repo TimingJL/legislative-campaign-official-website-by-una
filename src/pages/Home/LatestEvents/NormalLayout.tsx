@@ -6,13 +6,13 @@ const NormalLayout = () => {
   const otherEvents = events.filter((event) => event.id !== headlineEvent.id);
   return (
     <div className="lg:flex gap-[30px] hidden">
-      <div>
+      <div data-aos="fade-right" data-aos-delay="500">
         <Card variant="vertical" data={headlineEvent} />
       </div>
       <div className="flex flex-col gap-[30px]">
         {
-          otherEvents.map((event) => (
-            <Card key={event.id} variant="horizontal" data={event} />
+          otherEvents.map((event, index) => (
+            <Card key={event.id} variant="horizontal" data={event} data-aos="fade-left" data-aos-delay={(index + 1) * 500} />
           ))
         }
       </div>

@@ -9,7 +9,7 @@ const Footer = () => {
       className="flex justify-center bg-primary text-white px-[20px] pt-[30px] pb-[15px] overflow-visible"
     >
       <div className="container">
-        <div className="relative h-[2px]">
+        <div className="relative h-[2px]" data-aos="fade-right" data-aos-delay="1400">
           <img src={bottomCatSrc} className="absolute top-0 lg:left-[84px] left-[50%] translate-x-[-50%] lg:translate-x-[0%] translate-y-[calc(-100%+30px)]" />
         </div>
         <div className="flex justify-between">

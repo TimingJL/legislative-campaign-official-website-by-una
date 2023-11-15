@@ -15,19 +15,17 @@ const description = '我堅信，藉由推動更完善的貓咪福利和相關�
 const Hero = () => {
   return (
     <section
-      data-aos="fade-up"
-      data-aos-delay="300"
       id={anchorId.hero}
       className="flex justify-center bg-[#E3E3E3] lg:px-[20px] px-[10px] lg:pt-[146px] pt-[30px]"
     >
       <div className="container relative" id={anchorId.advocate}>
-        <img src={miaoLiHanCn} className="absolute right-0 top-[-120px] hidden lg:block" />
+        <img src={miaoLiHanCn} className="absolute right-0 top-[-120px] hidden lg:block" data-aos="fade-up" data-aos-delay="600" />
         <div className="relative">
           <div className="w-full flex justify-center sm:justify-start">
-            <img src={declaration2023Src} className="h-[20px] lg:h-[35px]" />
+            <img src={declaration2023Src} className="h-[20px] lg:h-[35px]" data-aos="fade-right" data-aos-delay="600" />
           </div>
-          <img src={sloganSrc} className="py-[10px] w-[345px] lg:w-[700px] hidden lg:block" />
-          <img src={sloganMobileSrc} className="py-[10px] min-w-[345px] max-w-[700px] w-full lg:hidden" />
+          <img src={sloganSrc} className="py-[10px] w-[345px] lg:w-[700px] hidden lg:block" data-aos="fade-right" data-aos-delay="900" />
+          <img src={sloganMobileSrc} className="py-[10px] min-w-[345px] max-w-[700px] w-full lg:hidden" data-aos="fade-right" data-aos-delay="900" />
           <img src={miaoLiHanEnOutlinedSrc} className="absolute bottom-[-20px] left-[60px] h-[130px] translate-y-[100%] md:block hidden" />
           <img src={miaoLiHanEnWrapOutlinedSrc} className="absolute bottom-0 left-[40px] h-[150px] translate-y-[100%] md:hidden block" />
         </div>
@@ -54,6 +52,7 @@ const Hero = () => {
                   "whitespace-pre-line text-center font-bold mb-[10px]",
                   "lg:whitespace-nowrap lg:text-[35px] lg:mb-[30px]"
                 )}
+                data-aos="fade-up" data-aos-delay="1200"
               >
                 {title}
               </div>
@@ -62,6 +61,7 @@ const Hero = () => {
                   "text-[10px] lg:text-[24px] font-bold whitespace-pre-line",
                   "lg:text-[25px]"
                 )}
+                data-aos="fade-up" data-aos-delay="1300"
               >
                 {description}
               </div>

@@ -11,6 +11,7 @@ const PolicyIssues = () => {
       className="flex justify-center bg-primary text-white px-[20px] py-[30px] pb-[50px]"
       data-aos="fade-up"
       data-aos-delay="300"
+      data-aos-offset="500"
     >
       <div className="container">
         <div className="flex align-center justify-center">

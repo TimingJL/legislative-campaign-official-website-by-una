@@ -104,7 +104,7 @@ const Navigation = () => {
               onClick={() => setIsMenuOpen(false)}
             />
           </div>
-          <div className="mt-[10px]">
+          {isMenuOpen && <div className="mt-[10px]">
             <ul className="flex flex-col items-end gap-[30px] text-[20px] font-bold text-[white]">
               <li
                 className="hover:opacity-80 active:scale-90 cursor-pointer transition-all"
@@ -112,6 +112,7 @@ const Navigation = () => {
                   scrollIntoViewWithOffset(document.getElementById(anchorId.advocate), 300);
                   setIsMenuOpen(false);
                 }}
+                data-aos="fade-up" data-aos-delay="100"
               >
                 候選人主張
               </li>
@@ -121,6 +122,7 @@ const Navigation = () => {
                   scrollIntoViewWithOffset(document.getElementById(anchorId.latestEvents), 60);
                   setIsMenuOpen(false);
                 }}
+                data-aos="fade-up" data-aos-delay="200"
               >
                 最新活動
               </li>
@@ -130,6 +132,7 @@ const Navigation = () => {
                   scrollIntoViewWithOffset(document.getElementById(anchorId.policyIssues), 60);
                   setIsMenuOpen(false);
                 }}
+                data-aos="fade-up" data-aos-delay="300"
               >
                 政策議題
               </li>
@@ -139,6 +142,7 @@ const Navigation = () => {
                   scrollIntoViewWithOffset(document.getElementById(anchorId.serviceInbox), 60);
                   setIsMenuOpen(false);
                 }}
+                data-aos="fade-up" data-aos-delay="400"
               >
                 民眾服務信箱
               </li>
@@ -150,12 +154,13 @@ const Navigation = () => {
                     scrollIntoViewWithOffset(document.getElementById(anchorId.donation), 60);
                     setIsMenuOpen(false);
                   }}
+                  data-aos="fade-up" data-aos-delay="500"
                 >
                   小額捐款
                 </Button>
               </li>
             </ul>
-          </div>
+          </div>}
         </div>
       </nav>
     </>

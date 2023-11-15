@@ -9,6 +9,12 @@ function App() {
       once: true
     });
     AOS.refresh();
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }, 100)
   }, []);
   return (
     <Home />
